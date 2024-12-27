@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin RP - Team</title>
+    <style>
+        /* Allgemeine Stile */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigationsleiste */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4A47A3;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar img.logo {
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .navbar .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Team-Bereich */
+        .team-section {
+            flex: 1;
+            text-align: center;
+            padding: 50px 20px;
+            background: url('image.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        .team-section h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .team-member p {
+            font-size: 12px;
+            color: #bbb;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4A47A3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+  <!-- Navigationsleiste -->
+  <nav class="navbar">
+    <!-- Logo und Titel -->
+    <div class="logo">
+        <img class="logo" src="https://cdn.discordapp.com/attachments/1320836222205038643/1321974106240978995/standard_6.gif?ex=676f2fd4&is=676dde54&hm=d6cab10f94f076d4fdde5780caa77fa67f160fdfe4531863b27681191ef79e71&" alt="Logo">
+        <span class="logo-text">Berlin RP</span>
+    </div>
+    <!-- Navigationslinks -->
+    <div class="menu">
+        <a class="menu-item" href="index.html">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322024434663428156/crvt.co-home-20-solid.png?ex=676f5eb3&is=676e0d33&hm=bcdecade730381ba1ce994033109bb6032fa23cb026687fcd1d44e79650c474d&" alt="Home">
+            Startseite
+        </a>
+        <a class="menu-item" href="https://discord.gg/berlin-rp">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322025511051984906/crvt.co-clipboard-document-list-solid.png?ex=676f5fb3&is=676e0e33&hm=b54908fdb471e847471d1c1627543860761f9f7405567240590812aec60d67e5&" alt="Ban">
+            Entbannung
+        </a>
+        <a class="menu-item" href="team.html">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322024604121698424/crvt.co-users-solid.png?ex=676f5edb&is=676e0d5b&hm=b8fcc030785fe92dad4f46d1cbd2e478fadf6942a044e827ddd0757096efc29e&" alt="Team">
+            Team
+        </a>
+        <a class="menu-item" href="regelwerk.html">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322025170180771922/crvt.co-bxs-book-bookmark.png?ex=676f5f62&is=676e0de2&hm=3986ff5a33f637133e4f639a3496faa5fac5d2fdfd80d5c75999759ae2e7c656&" alt="Regelwerk">
+            Regelwerk
+        </a>
+    </div>
+</nav>
+
+   <!-- Team-Bereich -->
+<section class="team-section">
+    <h1>Unser Team</h1>
+    <div class="team-grid">
+        <!-- Teammitglieder -->
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1321072925754920960/image0.gif?ex=676f3449&is=676de2c9&hm=c5064eb1c528a4e1fdf9884fbc28c1725aa41c29da6e9e91d447298b23528c14&" alt="Profilbild">
+            <h3>@blacky.dev</h3>
+            <p>Projektleitung</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037056704217088/SPOILER_dark_leleon.png?ex=676f6a74&is=676e18f4&hm=051e85f1fbb37b66c6d0985cddb1edd3c88276deb3095e97bb2c04ab0aad1035&" alt="Profilbild">
+            <h3>@dark_leleon</h3>
+            <p>Projektleitung</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036988127219752/SPOILER_der_vini.png?ex=676f6a64&is=676e18e4&hm=e7b25cb443a716ef9790499f697ab5522d9a8e25372285953347ab6fb94cc067&" alt="Profilbild">
+            <h3>@der_vini</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036988483866654/SPOILER_onlytix.png?ex=676f6a64&is=676e18e4&hm=94fe11fe8c2045f96216630b6b018861769e842f72b557e38ca198c6c5104752&" alt="Profilbild">
+            <h3>@onlytix</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036988941176933/SPOILER_09thor.gif?ex=676f6a64&is=676e18e4&hm=61528c5d0325bd43372a07a606cd0392425d48541480c6d6cb9fb0b14b5115a3&" alt="Profilbild">
+            <h3>@09thor</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036989813325834/SPOILER_scoorpixx.png?ex=676f6a64&is=676e18e4&hm=4e422240785a96a54df8ff59d449f1d6161b4164a989005f18e848d304259908&" alt="Profilbild">
+            <h3>@scoorpixx</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322040518582206475/SPOILER_.vsdm.png?ex=676f6dad&is=676e1c2d&hm=e18294d3abfe9a18d5e370d085dcb2f28207eca0d638f2b52f6074013445b5da&" alt="Profilbild">
+            <h3>@.vsdm</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036990346268672/SPOILER_philsteve7655.png?ex=676f6a64&is=676e18e4&hm=451964f0c82ebd34d46ac9ab0a6b23ee11a61a39e6846dd2e177bc8e9dce615a&" alt="Profilbild">
+            <h3>@philsteve7655</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036990694264854/SPOILER_paulderer1.png?ex=676f6a64&is=676e18e4&hm=d4740183a0ad6d4f18d0376710aabf44de21f07d2a4c929fa0017c84343c73de&" alt="Profilbild">
+            <h3>@paulderer1</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036990987862056/SPOILER_nurcool.png?ex=676f6a64&is=676e18e4&hm=273814d911bd0897c15086c8e200097d2954b7b86c826d8f75fdd890ccd1f910&" alt="Profilbild">
+            <h3>@nurcool</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036991239389256/SPOILER_schweinebraten8662.png?ex=676f6a64&is=676e18e4&hm=6fbf635e2a0ce1562798c161825642412208ab1f9bd783f1d293c4780f084568&" alt="Profilbild">
+            <h3>@schweinebraten8662</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036991579258982/SPOILER_nacho_4456.png?ex=676f6a65&is=676e18e5&hm=9d01204f7c75a057954f7cce12016781cccbd9554ce338c3a82e688f78ea290d&" alt="Profilbild">
+            <h3>@nacho_4456</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037054024056904/SPOILER_luca9.k_52289.png?ex=676f6a73&is=676e18f3&hm=33ef3dc2c080eeba7d4b7ea154f56b816bef8d80cbaa783f8a26642f2a3b513d&" alt="Profilbild">
+            <h3>@luca9.k_52289</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037054338764800/SPOILER_kingtiger648.png?ex=676f6a74&is=676e18f4&hm=2d49514aba04c80c710dc40ae20b1c020ee192fd9a94cef50edd26f6638bdbc4&" alt="Profilbild">
+            <h3>@kingtiger648</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037054657396737/SPOILER_karpfen123.png?ex=676f6a74&is=676e18f4&hm=2c67b8ebc2e30890d4b21b1b0b64788e4aa8f18d09ac0bbf2e5b4d6f5dd9a6b2&" alt="Profilbild">
+            <h3>@karpfen123</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037054934224997/SPOILER_karli_22046.png?ex=676f6a74&is=676e18f4&hm=c254544e2ecc04b3fae296b0ee5feb2f653276e0ad4c753b2584c1749a45e238&" alt="Profilbild">
+            <h3>@karli_22046</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037055206985879/SPOILER_capitainjustin1.png?ex=676f6a74&is=676e18f4&hm=f2d5aabb8b9812b40d9b75230357111ee7ca8df22f5a53c98d37d27d0114e0d3&" alt="Profilbild">
+            <h3>@capitainjustin1</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037096327942204/SPOILER_edgere2_.png?ex=676f6a7e&is=676e18fe&hm=2933f33d35dd9ffc567def8ad00b60cbfd1f3ceaa83e7cf9f36745f23fb68380&" alt="Profilbild">
+            <h3>@edgere2_</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037055580278875/SPOILER_joelkarl_112_45162.png?ex=676f6a74&is=676e18f4&hm=94ed791f42be3cebe12f8e22f05ab78840762550729dac652929e21b0fdc952c&" alt="Profilbild">
+            <h3>@joelkarl_112_45162</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037055966019625/SPOILER_kc_55x.png?ex=676f6a74&is=676e18f4&hm=a8d137871f1be76331ad75c3beb7d63b94a7e608b9f9516a4963eb8727c16950&" alt="Profilbild">
+            <h3>@kc_55x</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037056376930347/SPOILER_fynnlukah.png?ex=676f6a74&is=676e18f4&hm=42d53cbcf871649466358f8b717888fbf7a98358773e84c40acd6e10b0e968d7&" alt="Profilbild">
+            <h3>@fynnlukah</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322043268263051278/discord-logo-icon-editorial-free-vector.png?ex=676f703d&is=676e1ebd&hm=d05ee746f798aa983eaa6226ac4e323a69c9a237809eca64078e15da068a671e&" alt="Profilbild">
+            <h3>@andykre</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322036987569373215/SPOILER_ein_baum77.png?ex=676f6a64&is=676e18e4&hm=a1f24179faadae824458419eb3f02233a4d13547eb1ad4954bec0bfdf9f4ed4b&" alt="Profilbild">
+            <h3>@ein_baum77</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037057127846060/SPOILER_bababoy1282.png?ex=676f6a74&is=676e18f4&hm=7fce6fcd6b4c8806f9c7a9133b628bc81b3369c2f04e19ac2abc643e957f596a&" alt="Profilbild">
+            <h3>@bababoy1282</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037096025686046/SPOILER_daniel_112i.gif?ex=676f6a7d&is=676e18fd&hm=3866d777e0675f77c65ab14ace9b1a0af787fd1f7669128c06d80ee8e8ea4883&" alt="Profilbild">
+            <h3>@daniel_112i</h3>
+            <p>Teammitglied</p>
+        </div>
+        <div class="team-member">
+            <img src="https://cdn.discordapp.com/attachments/1298305638413238347/1322037096562688051/SPOILER_jason_1803.png?ex=676f6a7e&is=676e18fe&hm=026f3dd1dafb49d508b1e707ea811ac2fa030b9260e2f145496d6d8f894c3459&" alt="Profilbild">
+            <h3>@jason_1803</h3>
+            <p>Teammitglied</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2024 Berlin RP - Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>

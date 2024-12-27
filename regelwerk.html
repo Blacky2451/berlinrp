@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin RP - Regelwerk</title>
+    <style>
+        /* Allgemeine Stile */
+        html, body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Navigationsleiste */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4A47A3;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar img.logo {
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .navbar .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar a img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hauptinhalt */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: calc(100vh - 80px); /* Gesamthöhe abzüglich Navbar */
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Scrollen erlauben */
+        }
+
+        .rules {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1A1A1A;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .rules h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #4A47A3;
+        }
+
+        .rules p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        .rules .punkt {
+            color: #F39C12;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4A47A3;
+            color: white;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigationsleiste -->
+    <nav class="navbar">
+        <!-- Logo und Titel -->
+        <div class="logo">
+            <img class="logo" src="https://cdn.discordapp.com/attachments/1320836222205038643/1321974106240978995/standard_6.gif?ex=676f2fd4&is=676dde54&hm=d6cab10f94f076d4fdde5780caa77fa67f160fdfe4531863b27681191ef79e71&" alt="Logo">
+            <span class="logo-text">Berlin RP</span>
+        </div>
+        <!-- Navigationslinks -->
+        <div class="menu">
+            <a class="menu-item" href="index.html">
+                <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322024434663428156/crvt.co-home-20-solid.png?ex=676f5eb3&is=676e0d33&hm=bcdecade730381ba1ce994033109bb6032fa23cb026687fcd1d44e79650c474d&" alt="Home">
+                Startseite
+            </a>
+            <a class="menu-item" href="https://discord.gg/berlin-rp">
+                <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322025511051984906/crvt.co-clipboard-document-list-solid.png?ex=676f5fb3&is=676e0e33&hm=b54908fdb471e847471d1c1627543860761f9f7405567240590812aec60d67e5&" alt="Ban">
+                Entbannung
+            </a>
+            <a class="menu-item" href="team.html">
+                <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322024604121698424/crvt.co-users-solid.png?ex=676f5edb&is=676e0d5b&hm=b8fcc030785fe92dad4f46d1cbd2e478fadf6942a044e827ddd0757096efc29e&" alt="Team">
+                Team
+            </a>
+            <a class="menu-item" href="regelwerk.html">
+                <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322025170180771922/crvt.co-bxs-book-bookmark.png?ex=676f5f62&is=676e0de2&hm=3986ff5a33f637133e4f639a3496faa5fac5d2fdfd80d5c75999759ae2e7c656&" alt="Regelwerk">
+                Regelwerk
+            </a>
+        </div>
+    </nav>
+
+   <!-- Hauptinhalt -->
+<div class="content">
+    <div class="rules">
+        <h2 style="color: orange;">Regelwerk für Rollenspiel-Sitzungen</h2>
+        <p><strong>§1 Voiding / Szenen löschen</strong><br>
+        Szenen können von Moderatoren aus verschiedenen Gründen gelöscht werden. Sobald eine Szene gelöscht wurde, darf sich der eigene Charakter nicht mehr an die besagte Szene erinnern.<br>
+        <span style="color: orange;"> • Eine Nichtbeachtung dieser Regel wird mit einer Verwarnung geahndet.</span><br>
+
+        <p><strong>§2 Betreten von Jobs ohne bestandene Bewerbung</strong><br>
+        Um bei der Polizei, der Feuerwehr, dem ADAC oder HVV (Bus- und Taxi-Service) arbeiten zu dürfen, musst du eine Bewerbung auf dem jeweiligen Nebenserver bestehen.<br>
+        <span style="color: orange;"> • Eine Nichtbeachtung dieser Regel wird mit einer Verwarnung oder gegebenenfalls mit einem Kick moderiert.</span><br>
+
+        <p><strong>§3 Protest-RP</strong><br>
+        Proteste und/oder Demonstrationen sind ausschließlich während nicht aktiver Friedenszeiten gestattet. Bei Blockaden mit Fahrzeugen muss der Fahrer vor Ort bleiben, um eine Räumung zu ermöglichen. Reale politische Konflikte dürfen nur in angepasster Form verwendet werden.<br>
+        <span>•</span> Das Moderationsteam darf Demonstrationen ohne öffentliche Rechtfertigung auflösen.<br>
+        <span style="color: orange;"> • Eine Nichteinhaltung dieser Regel wird mit einer Verwarnung oder, wenn nicht sogar, mit einem Kick oder temporären Bann geahndet.</span><br>
+
+        <p><strong>§4 Friedenszeiten / Peacetime</strong><br>
+        Während der aktivierten Friedenszeit sind die folgenden Handlungen verboten:
+        <ul>
+            <li>Juwelierraub</li>
+            <li>Bankraub</li>
+            <li>Container-Schiff Raub</li>
+            <li>Geiselnahme</li>
+            <li>Waffenbesitz</li>
+            <li>Angriffe auf andere Spieler</li>
+            <li>Widersetzungen gegen polizeiliche Anweisungen</li>
+            <li>Tresor-Raub bei Erwin's Club</li>
+        </ul>
+        <span style="color: orange;"> • Eine Nichtbeachtung dieser Regel führt zu einer Verwarnung oder gegebenenfalls zu einem Kick.</span><br>
+
+        <p><strong>§5 RDM (Random Deathmatch)</strong><br>
+        Das Angreifen von Spielern ohne einen vorhergehenden Rollenspiel-Kontext ist verboten.<br>
+        <span style="color: orange;"> • Eine Nichtbeachtung dieser Regel kann mit einer Verwarnung oder in schweren Fällen mit einem Kick vom Server geahndet werden.</span><br>
+
+        <p><strong>§6 Adminautos</strong><br>
+        Adminautos dürfen im RP nicht beachtet werden. Ein Adminauto mit aktivierten Lichtern pausiert mit sofortiger Wirkung alle Szenen an dessen Standort. Solltest du Fragen zu Regeln oder Ähnlichem haben, kannst du den Fahrer des Adminautos kontaktieren. Bitte bedenke, dass das Gespräch jedoch außerhalb des Charakters geführt werden muss.<br>
+        <span>•</span> Wenn die Admin-Sirene ertönt, sind alle Spieler verpflichtet, den rechten Fahrbahnrand aufzusuchen und kontrolliert zum Halt zu kommen. Ein Adminauto, das dich nicht verfolgt, wird immer versuchen, dich links zu überholen.<br>
+        <span>•</span> Eine Nichtbeachtung dieser Regel wird mit einer Verwarnung oder gegebenenfalls mit einem Kick moderiert.<br>
+        <span>•</span> Das Flüchten vor einem Adminauto kann mit einem temporären Bann geahndet werden.</p>
+
+        <p><strong>§7 Crash-RP / Unfall-RP</strong><br>
+        Verkehrsunfälle müssen jederzeit nachgespielt werden. Auch bei leichten Unfällen sollte das Fahrzeug zumindest oberflächlich begutachtet werden.<br>
+        <span>•</span> Das Fahren eines Autos/Quads mit mehr als zwei kaputten Reifen gilt als fehlendes Crash-RP.<br>
+        <span>•</span> Das Fahren eines Motorrads/Rollers mit jeglicher Anzahl an kaputten Reifen gilt ebenfalls als fehlendes Crash-RP.</p>
+
+        <p><strong>§8 Hosentaschen-RP</strong><br>
+        Große Gegenstände wie Warnkegel, Leitern, Langwaffen usw. müssen aus einem Kofferraum oder einem Regal, wo solche Gegenstände vermutet werden können, geholt werden.<br>
+        <span style="color: orange;"> •  Eine Nichtbeachtung dieser Regel wird mit einer Verwarnung oder gegebenenfalls mit einem Kick moderiert.</span><br>
+
+        <p><strong>§9 Fail Roleplay (FRP)</strong><br>
+        Unrealistisches Verhalten ist nicht erlaubt und wird mit einer Verwarnung oder einem Ban vom Server bestraft.<br>
+        <span>•</span> OOC (Out of Character) Gespräche gelten ebenfalls als FRP. Wenn nötig, sind sie nur in Klammern erlaubt.<br>
+        <span>•</span> Fehlendes FearRP wird als FRP gewertet.<br>
+        <span>•</span> Metagaming wird ebenfalls als FRP klassifiziert.</p>
+
+        <p><strong>§10 Unrealistisch schnelles Sterben</strong><br>
+        Das Versterben eines Charakters in unrealistischer Geschwindigkeit ist untersagt.<br>
+        <span>•</span> Eine Nichtbeachtung dieser Regel kann als FRP gewertet werden.</p>
+
+        <p><strong>§11 Combat Logging</strong><br>
+        Combat Logging bezeichnet das Verlassen des Spiels, um Konsequenzen oder Verpflichtungen zu vermeiden. Dies wird mit einer Verwarnung oder möglicherweise mit einem temporären Bann geahndet.<br>
+        <span>•</span> Solltest du einen triftigen Grund haben, das Spiel schnell zu verlassen, informiere bitte einen Moderator und liefere, wenn möglich, Beweise.</p>
+
+        <p><strong>§12 Unrealistische Avatare</strong><br>
+        Avatare, die ein Tier oder einen Gegenstand darstellen, sind in unseren Rollenspiel-Sitzungen verboten.<br>
+        <span style="color: orange;"> •  Wir behalten uns das Recht vor, Nutzer aufgrund ihres Avatars aufzufordern, diesen zu ändern.</span><br>
+
+
+         <!-- Neuer Abschnitt für die nächsten Regeln -->
+         <div class="rules-section">
+            <h2 style="color: orange;">Geiseln + TOS/Verbot</h2>
+            <p><strong>§13 Play-to-Kill-Regel</strong><br>
+            Szenen wie Raubüberfälle dürfen nicht mit der alleinigen Absicht gestartet werden, andere zu töten oder anzugreifen. Solches Verhalten wird als RDM oder, in schwerwiegenden Fällen, als Terror-RP eingestuft.<br>
+            <span style="color: orange;"> •  Die Missachtung dieser Regel kann eine Verwarnung oder einen Bann zur Folge haben.</span><br>
+
+            <p><strong>§14 Stürmung von Geiselnahmen</strong><br>
+            Geiselnahmen können aus folgenden Gründen von der Polizei gestürmt werden:<br>
+            <span>•</span> keine Einigung nach mehreren Verhandlungsversuchen<br>
+            <span>•</span> dringende Vermutung auf schwere Verletzung oder Tod der Geisel</p>
+
+            <p><strong>§15 Verbotene Waffen</strong><br>
+            <span>•</span> Derzeit sind keine Waffen verboten. Wir behalten uns jedoch das Recht vor, diese Regel jederzeit ohne Vorankündigung zu ändern.</p>
+
+            <p><strong>§16 Forderungen an die Geisel</strong><br>
+            Es ist nicht erlaubt, eine Geisel zu einer Überweisung von Geld zu zwingen.<br>
+            <span style="color: orange;"> •  Die Missachtung dieser Regel wird mit einer Verwarnung geahndet.</span><br>
+
+            <p><strong>§17 Slotted Fahrzeuge</strong><br>
+            Diese Fahrzeuge sind nur dann erlaubt, wenn der Host sie ausdrücklich zulässt:<br>
+            <span>•</span> Porsche 911 / Ferdinand 911 (Normal & Cabriolet)<br>
+            <span>•</span> Porsche Cayenne / Ferdinand Jalapeno</p>
+
+            <p><strong>§18 Maximale Werte für Geiselnahmen</strong><br>
+            <span>•</span> Geiseln: 3<br>
+            <span>•</span> Geldforderungen: 14.000€ (abhängig vom Budget des Polizeidienstes)<br>
+            <span>•</span> Maximal eine Forderung pro Geisel</p>
+
+            <p><strong>§19 Drittparteien in Konfliktszenen</strong><br>
+            In Auseinandersetzungen zwischen zwei Parteien (z. B. Schlägerei oder Schusswechsel) dürfen keine weiteren Parteien eingreifen. Diese Regel gilt nicht für die Polizei.<br>
+            <span style="color: orange;"> •  Die Missachtung dieser Regel kann mit einer Verwarnung oder einem temporären Bann geahndet werden.</span><br>
+
+            <p><strong>§20 Verbotene Fahrzeuge und Waffen</strong><br>
+            <strong>16.1 Verbotene Fahrzeuge</strong><br>
+            <span>•</span> Derzeit sind keine Fahrzeuge verboten. Wir behalten uns jedoch das Recht vor, diese Regel jederzeit ohne Vorankündigung zu ändern.<br>
+            Verbotene Fahrzeuge, die in Richtung des Autohauses unterwegs sind, werden im RP ignoriert. Weicht die Route ab, ist ein Moderator zu informieren.</p>
+
+            <p><strong>§21 Fake Geiseln</strong><br>
+            Schein-Geiseln (Fake-Geiseln) sind nicht gestattet.<br>
+            <span style="color: orange;"> •  Eine Nichtbeachtung dieser Regel wird mit einer Verwarnung oder gegebenenfalls einem temporären Bann geahndet.</span><br>
+
+            <p><strong>§22 Wehrlose Parteien</strong><br>
+            Mitarbeiter des ADAC, der Feuerwehr, des Rettungsdienstes sowie der Bus- und LKW-Firmen dürfen nicht als Geiseln genommen werden. Sie müssen dennoch im Rollenspiel Furcht vor Bedrohungen zeigen.<br>
+            <span style="color: orange;"> •  Eine Nichtbeachtung dieser Regel kann mit einer Verwarnung oder in schweren Fällen mit einem temporären Bann geahndet werden.</span><br>
+
+            <p><strong>Hinweis!</strong><br>
+            Wir behalten uns das Recht vor, diese Regeln zu ändern, ohne die Spieler über die Änderungen zu informieren.</p>
+
+
+            <div class="definitions">
+                <h2 style="color: orange;">Definitionen</h2>
+                <p><strong>Terror-RP</strong><br>
+                <span>•</span> Ausspielen von Attentaten oder anderen terroristischen Taten. Beispiele: Bombendrohungen, Angriffe mit Sprengstoff auf andere Personen.</p>
+            
+                <p><strong>Suizid-RP</strong><br>
+                <span>•</span> Ausspielen oder Androhung von selbst verletzendem Verhalten.<br>
+                Hinweis: Das Erzwingen solch eines Verhaltens durch Bedrohung kann ebenfalls als Suizid-RP gewertet werden.</p>
+            
+                <p><strong>VDM</strong><br>
+                <span>•</span> "Vehicle Deathmatch"<br>
+                <span>•</span> Absichtliches Anfahren eines Spielers mit einem Fahrzeug, ohne direkt vorausgehendes Rollenspiel.</p>
+            
+                <p><strong>Fake-Geisel</strong><br>
+                <span>•</span> Spieler, der als Geisel posiert, sich jedoch im Vorhinein mit den Tätern abgesprochen hat.</p>
+            
+                <p><strong>OOC Talk</strong><br>
+                <span>•</span> Sprechen außerhalb des Charakters.</p>
+            
+                <p><strong>Meta Gaming</strong><br>
+                <span>•</span> Nutzen von Informationen, die der Charakter aus deren Perspektive nicht wissen kann.</p>
+            
+                <p><strong>Geisel</strong><br>
+                <span>•</span> Person, die durch Androhung physischer Gewalt zur Befolgung von Anweisungen gezwungen wird.<br>
+                <span>•</span> Person, deren Leben bedroht wird, um andere Personen dazu zu drängen, Anweisungen zu befolgen (z.B. während Verhandlungen).</p>
+            
+                <p><strong>Fear-RP</strong><br>
+                <span>•</span> Schützen des eigenen oder eines fremden Lebens.<br>
+                <span>•</span> Ausspielen von Angst um das eigene oder um ein fremdes Leben.</p>
+            
+                <p><strong>NSFW-RP</strong><br>
+                <span>•</span> "Not Safe for Work - Roleplay"<br>
+                <span>•</span> Ausspielen von sexuellen und/oder nicht jugendfreien Inhalten.</p>
+            
+                <p><strong>RDM</strong><br>
+                <span>•</span> "Random Deathmatch"<br>
+                <span>•</span> Angriff gegen Spieler ohne direkt vorausgehendes Rollenspiel.</p>
+            
+                <p><strong>Gang-RP</strong><br>
+                <span>•</span> Formen einer kriminellen Gruppierung mit vier oder mehr Mitgliedern.</p>
+            
+                <p><strong>Combat Logging</strong><br>
+                <span>•</span> Das Verlassen des Spiels während des Kampfes/Situation, um Konsequenzen zu vermeiden.</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+   
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        © Berlin RP 2024 - Alle Rechte vorbehalten
+    </footer>
+</body>
+</html>
+
+

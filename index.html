@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin RP - Willkommen</title>
+    <style>
+        /* Allgemeine Stile */
+        html, body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Vollständige Höhe abdecken */
+            overflow: hidden; /* Scrollen verhindern */
+        }
+
+        /* Navigationsleiste */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4A47A3;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        /* Logo-Bereich */
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar img.logo {
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .navbar .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .navbar a img {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hauptinhalt */
+        .welcome-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Nimmt die gesamte Höhe ein */
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box; /* Padding berücksichtigen */
+        }
+
+        .welcome-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        .welcome-section .emojis {
+            font-size: 36px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4A47A3;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        .join-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.join-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #0066ff, #00ccff);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 102, 255, 0.6), 0 0 20px rgba(0, 204, 255, 0.6);
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 10px rgba(0, 102, 255, 0.6), 0 0 10px rgba(0, 204, 255, 0.6); }
+    50% { box-shadow: 0 0 20px rgba(0, 102, 255, 1), 0 0 20px rgba(0, 204, 255, 1); }
+    100% { box-shadow: 0 0 10px rgba(0, 102, 255, 0.6), 0 0 10px rgba(0, 204, 255, 0.6); }
+}
+
+.join-button:hover {
+    background: linear-gradient(90deg, #0052cc, #0099cc);
+    box-shadow: 0 0 25px rgba(0, 102, 255, 1), 0 0 25px rgba(0, 204, 255, 1);
+    transform: scale(1.05);
+}
+
+/* Leuchtender Text */
+.glow-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 102, 255, 0.8), 0 0 20px rgba(0, 204, 255, 1);
+    animation: textGlow 3s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(0, 102, 255, 0.8), 0 0 20px rgba(0, 204, 255, 1);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(0, 102, 255, 1), 0 0 30px rgba(0, 204, 255, 1);
+    }
+}
+
+/* Hervorgehobener Abschnitt */
+.highlight {
+    background: linear-gradient(90deg, rgba(0, 102, 255, 0.5), rgba(0, 204, 255, 0.5));
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 102, 255, 0.6);
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigationsleiste -->
+  <nav class="navbar">
+    <!-- Logo und Titel -->
+    <div class="logo">
+        <img class="logo" src="https://cdn.discordapp.com/attachments/1320836222205038643/1321974106240978995/standard_6.gif?ex=676f2fd4&is=676dde54&hm=d6cab10f94f076d4fdde5780caa77fa67f160fdfe4531863b27681191ef79e71&" alt="Logo">
+        <span class="logo-text">Berlin RP</span>
+    </div>
+    <!-- Navigationslinks -->
+    <div class="menu">
+        <a class="menu-item" href="index.html">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322024434663428156/crvt.co-home-20-solid.png?ex=676f5eb3&is=676e0d33&hm=bcdecade730381ba1ce994033109bb6032fa23cb026687fcd1d44e79650c474d&" alt="Home">
+            Startseite
+        </a>
+        <a class="menu-item" href="https://discord.gg/berlin-rp">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322025511051984906/crvt.co-clipboard-document-list-solid.png?ex=676f5fb3&is=676e0e33&hm=b54908fdb471e847471d1c1627543860761f9f7405567240590812aec60d67e5&" alt="Ban">
+            Entbannung
+        </a>
+        <a class="menu-item" href="team.html">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322024604121698424/crvt.co-users-solid.png?ex=676f5edb&is=676e0d5b&hm=b8fcc030785fe92dad4f46d1cbd2e478fadf6942a044e827ddd0757096efc29e&" alt="Team">
+            Team
+        </a>
+        <a class="menu-item" href="regelwerk.html">
+            <img src="https://cdn.discordapp.com/attachments/1193016571115876393/1322025170180771922/crvt.co-bxs-book-bookmark.png?ex=676f5f62&is=676e0de2&hm=3986ff5a33f637133e4f639a3496faa5fac5d2fdfd80d5c75999759ae2e7c656&" alt="Regelwerk">
+            Regelwerk
+        </a>
+    </div>
+</nav>
+
+<section class="welcome-section" id="startseite">
+    <h1 class="glow-text">Herzlich Willkommen bei Berlin RP!</h1>
+    <p>Erlebe die pulsierende Welt von Berlin RP, wo Spannung, Abenteuer und eine großartige Community auf dich warten.</p>
+    <p>Entscheide selbst: Ob als Polizist, Unternehmer, Künstler oder Bürger – hier kannst du deine eigene Geschichte schreiben und das Großstadtleben hautnah genießen.</p>
+    <p class="highlight">Wichtig: Bitte lies dir unsere Regeln sorgfältig durch und sei respektvoll gegenüber anderen Spielern. Gemeinsam schaffen wir eine großartige Atmosphäre!</p>
+    <p>Wir freuen uns, dich in unserer Welt willkommen zu heißen. Viel Spaß und Erfolg in Berlin RP!</p>
+    <p class="glow-text">Dein Berlin RP-Team</p>
+
+
+    <!-- Leuchtender Button -->
+    <div class="join-button-container">
+        <a href="https://discord.gg/berlin-rp" class="join-button">Join Now!</a>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2024 Berlin RP - Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
